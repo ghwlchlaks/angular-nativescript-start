@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+    selector: "Home",
+    moduleId: module.id,
+    templateUrl: "./home.component.html",
+    styleUrls: ['home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'angular-nativescript-integration';
 
-  constructor() { }
+    constructor() {
+        // Use the component constructor to inject providers.
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit(): void {
+        // Init your component properties here.
+    }
 }
